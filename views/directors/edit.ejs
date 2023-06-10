@@ -1,0 +1,10 @@
+<h2 class="page-header">Edit Director</h2>
+<form action="/directors/<%= director.id %>?_method=PUT" method="POST">
+  <%- include('_form_fields') %>
+  <div class="form-row form-row-end btn-row">
+    <a class="btn" href="/directors/<%= director.id %>"><span>Cancel</span></a>
+    <button class="btn" type="submit">
+      <Cancel><span>Update</span></Cancel>
+    </button>
+  </div>
+</form>

@@ -1,0 +1,42 @@
+<h2 class="page-header">Search Movie</h2>
+<form action="/movies" method="GET">
+  <div class="form-row">
+    <div class="form-item">
+      <label>Title</label>
+      <input type="text" name="title" value="<%= searchOptions.title %>" />
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-item">
+      <label>Watched After</label>
+      <input
+        type="date"
+        name="watchedAfter"
+        value="<%= searchOptions.watchedAfter %>"
+      />
+    </div>
+    <div class="form-item">
+      <label>Watched Before</label>
+      <input
+        type="date"
+        name="watchedBefore"
+        value="<%= searchOptions.watchedBefore %>"
+      />
+    </div>
+    <div class="form-item">
+      <label>Movie Rating</label>
+      <input
+        type="number"
+        name="movieRating"
+        min="1"
+        max="10"
+        value="<%= searchOptions.movieRating %>"
+      />
+    </div>
+  </div>
+  <div class="form-row form-row-end">
+    <button class="btn" type="submit"><span> Search</span></button>
+  </div>
+</form>
+<br />
+<%- include('../partials/movieGrid', { movies: movies, large: true }) %>
