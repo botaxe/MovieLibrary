@@ -1,5 +1,6 @@
 # MovieLibrary
 MPA used to store and catalog watch movies/shows following rating, description, ect.
+![image](https://github.com/botaxe/MovieLibrary/assets/115518845/e30f25a1-ed14-43a3-942e-89d3b78fe193)
 
 # Installations:
 - body-parser
